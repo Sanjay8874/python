@@ -3,7 +3,8 @@
 def add(a,b):
     return a+b
 
-def substract(a,b):
+
+def subtract(a,b):
     return a-b
 
 def divide(a,b):
@@ -11,7 +12,23 @@ def divide(a,b):
 
 def multiplication(a,b):
     return a*b
-print("Enter the choice 1:add, 2:substract, 3:divide, 4:multiplication")
-choice = input("Eneter the operation 1,2,3,4")
+print("Select operation \n 1:add\n 2:substract\n 3:divide\n 4:multiplication")
+choice = int(input("Enter value: "))
+
+a = float(input("Enter 1st value:"))
+b = float(input("Enter 2nd value:"))
+
+
+if choice == 1:
+    print(a,"+", b,"=",add(a, b))
+    
+if choice == 2:
+    print(a,"-", b,"=",subtract(a, b))
     
 
+if choice == 3:
+    
+    print(a,"/", b,"=",divide(a, b))
+    
+if choice == 4:
+    print(a,"*", b,"=",multiplication(a, b))
